@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:wght@500&family=Spartan:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scrollomatic.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("a.scroll").scrollomatic();
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">home</a></li>
+                <li><a href="#temas" class="scroll">temas</a></li>
+                <li><a href="#galeria" class="scroll">galeria</a></li>
+                <li><a href="#contacto" class="scroll">contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido">
+        <video  loop autoplay preload="auto" >
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ovg" type="video/ovg">
+            <source src="video/video.webm" type="video/webm">
+            <p>su navegador no soporta el elemento video</p>
+        </video>
+        <section id="home">
+            <div id="globo"></div>
+            <h2>bienvenidos a mi pagina <span>web</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sapiente ut quis perspiciatis blanditiis sequi obcaecati? Assumenda veniam sunt est suscipit, voluptates exercitationem.</p>
+            <a href="#temas" class="scroll">conozca mas</a>
+            <div id="abajo"></div>
+        </section>
+        <section id="temas">
+            <h3>temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>subtitulo nivel 4</h4>
+                <p>texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui</p>
+                <a href="">leer mas</a>
+                <div id="imagen2"></div>
+                <h4>subtitulo nivel 4</h4>
+                <p>texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui</p>
+                <a href="">leer mas</a>
+                <div id="imagen3"></div>
+                <h4>subtitulo nivel 4</h4>
+                <p>texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui texto simulado aqui</p>
+                <a href="">leer mas</a>
+            </article>
+        </section>
+        <section id="galeria">
+            <h3>galeria</h3>
+            <div id="foto">
+                <a href="#" title="imagen1"><img src="img/1.jpg" alt="imagen1"></a>
+                <a href="#" title="imagen2"><img src="img/2.jpg" alt="imagen2"></a>
+                <a href="#" title="imagen3"><img src="img/3.jpg" alt="imagen3"></a>
+                <a href="#" title="imagen4"><img src="img/4.jpg" alt="imagen4"></a>
+                <a href="#" title="imagen5"><img src="img/5.jpg" alt="imagen5"></a>
+                <a href="#" title="imagen6"><img src="img/6.jpg" alt="imagen6"></a>
+                <a href="#" title="imagen7"><img src="img/7.jpg" alt="imagen7"></a>
+                <a href="#" title="imagen8"><img src="img/8.jpg" alt="imagen8"></a>
+                <a href="#" title="imagen9"><img src="img/9.jpg" alt="imagen9"></a>
+            </div>
+        </section>
+        <section id="contacto">
+            <h3 >contactanos</h3>
+            <div id="formulario">
+                <form action="#" method="post">
+                    <input type="text" name="nombre" placeholder="nombre" required>
+                    <input type="email" name="email" placeholder="email" required>
+                    <input type="tel" name="telefono" placeholder="telefono" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="debes colocar un numero tlelefonico valido" required>
+                    <textarea name="mensaje"  cols="30" rows="10" placeholder="mensaje" required></textarea>
+                    <input type="submit" value="enviar datos">
+                </form>
+            </div>
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15691.616095302918!2d-66.9154179!3d10.5082253!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1585963582742!5m2!1ses!2sve" width="600" height="450" ></iframe>
+            </div>
+            <a href="#contenido" class="arriba scroll" ></a>
+        </section>
+        <footer>
+            <p>copyright &copy; 2020 samuel graterol - todos los derechos reservados</p>
+        </footer>
+    </main>
+    
+</body>
+</html>
